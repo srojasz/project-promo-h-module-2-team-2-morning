@@ -1,0 +1,23 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6b6b6b;
+    padding: 18px 61px 20px 61px;
+  }
+
+  &__text {
+    margin: 0 0 12px 0;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40px 10px 41px;
+  }
+}
