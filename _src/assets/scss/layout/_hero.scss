@@ -5,61 +5,60 @@
   background: #f5f5f5;
 
   &__logo {
-    width: 250px;
-    padding-top: 95px;
+    width: 25rem;
+    padding-top: 9.5rem;
   }
 
   &__title {
-    font-size: 19.2px;
+    font-size: 1.92rem;
     font-family: "Merriweather", serif;
     font-weight: 900;
     color: #e17334;
-    padding-top: 35.4px;
+    padding-top: 3.54rem;
   }
 
   &__text {
     color: #114e4e;
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    font-size: 12.8px;
-    max-width: 264.8px;
+    font-size: 1.28rem;
+    max-width: 26.48rem;
   }
-}
+  &__steps {
+    margin: 1.78rem 2.64rem 3.86rem 2.56rem;
+    display: grid;
+    justify-items: center;
 
-.steps {
-  margin: 17.8px 26.4px 38.6px 25.6px;
-  display: grid;
-  justify-items: center;
-
-  width: 268px;
-  height: 73.8px;
-  border: solid 1.6px rgba(225, 115, 52, 0.21);
-  border-radius: 4px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+    width: 26.8rem;
+    height: 7.38rem;
+    border: solid 0.16rem rgba(225, 115, 52, 0.21);
+    border-radius: 0.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .far {
   text-align: center;
-  height: 26px;
-  width: 32px;
-  font-size: 22.4px;
+  height: 2.6rem;
+  width: 3.2rem;
+  font-size: 2.24rem;
   color: #e17334;
 
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .fas {
   text-align: center;
-  font-size: 22.4px;
-  height: 26px;
-  width: 32px;
+  font-size: 2.24rem;
+  height: 2.6rem;
+  width: 3.2rem;
   color: #e17334;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .start-button {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   display: flex;
   align-self: end;
   justify-content: center;
@@ -67,11 +66,11 @@
 
   font-family: "Open Sans", sans-serif;
 
-  font-size: 16px;
+  font-size: 1.6rem;
   color: antiquewhite;
-  width: 129px;
-  height: 42px;
-  border-radius: 21px;
+  width: 12.9rem;
+  height: 4.2rem;
+  border-radius: 2.1rem;
 
   background-color: #438792;
   text-transform: uppercase;
@@ -79,36 +78,35 @@
 }
 
 .grid-text {
-  margin-bottom: 17.8px;
+  margin-bottom: 1.78rem;
   margin-top: 0;
-  font-size: 12.8px;
+  font-size: 1.28rem;
 }
 
 @media all and (min-width: 768px) {
   .header {
     &__logo {
-      width: 419px;
-      padding-top: 350px;
+      width: 41.9rem;
+      padding-top: 35rem;
     }
 
     &__title {
-      font-size: 24px;
-      padding-top: 31px;
+      font-size: 2.4rem;
+      padding-top: 3.1rem;
     }
 
     &__text {
       color: #114e4e;
-      font-size: 16px;
-      max-width: 331px;
+      font-size: 1.6rem;
+      max-width: 33.1rem;
+    }
+    &__steps {
+      margin: 2.7rem 22.1rem 18.6rem 22.2rem;
+      width: 32.5rem;
     }
   }
 
-  .steps {
-    margin: 27px 221px 186px 222px;
-    width: 325px;
-  }
-
   .grid-text {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
