@@ -1,55 +1,88 @@
 .collapsable-box {
+  font-family: $opensans;
+  color: $grey;
+  text-transform: uppercase;
+  border-bottom: $grey;
+  margin: 0 2rem;
   &__title {
-    font-family: $opensans;
-    /* font-weight: bolder; */
+    font-size: 1.8rem;
+    font-weight: 600;
   }
   &__sub-box {
+    font-size: 1.4rem;
   }
 }
 .design {
   &__title {
     background-color: aqua;
+    margin: 2.7rem auto 0rem 5.1rem;
   }
   &__sub-box {
   }
 }
 .color-box {
+  background-color: blueviolet;
+  display: flex;
+  margin-top: 2.2rem;
+  margin-left: 3.9rem;
+  border-bottom: $grey;
   &__title {
-    font-family: $opensans;
+    background-color: red;
+    margin: 0 21.9rem 0 3.9rem;
   }
   &__form {
+    background-color: salmon;
   }
 }
 .palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   &__box {
-    width: 90px;
-    height: 75px;
   }
   &__box--darkGreen {
     background-color: $darkGreen;
+    width: 3rem;
+    height: 2.5rem;
   }
   &__box--medGreen {
     background-color: $mediumBlue;
+    width: 30px;
+    height: 25px;
   }
   &__box--lightGreen {
     background-color: $lightGreen;
+    width: 30px;
+    height: 25px;
   }
   &__box--darkRed {
     background-color: $darkRed;
+    width: 30px;
+    height: 25px;
   }
   &__box--medRed {
     background-color: $red;
+    width: 30px;
+    height: 25px;
   }
   &__box--lightRed {
     background-color: $darkOrange;
+    width: 30px;
+    height: 25px;
   }
   &__box--darkGray {
     background-color: $bluishGray;
+    width: 30px;
+    height: 25px;
   }
   &__box--beige {
     background-color: $yellowishBeige;
+    width: 30px;
+    height: 25px;
   }
   &__box--lightGray {
     background-color: $lightBlue;
+    width: 30px;
+    height: 25px;
   }
 }
