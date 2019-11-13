@@ -57,6 +57,10 @@
     font-size: 1.6rem;
     line-height: 1.25;
   }
+
+  &__img{
+    width: 100%;
+  }
 }
 
 .card-container{
@@ -64,3 +68,8 @@
   height: 32.9rem;
 }
 
+.card__img-container{
+  width: 24rem;
+  height: 20rem;
+  border: pink solid 2px;
+}
