@@ -1,6 +1,55 @@
 .collapsable-box {
   &__title {
+    font-family: $opensans;
+    /* font-weight: bolder; */
   }
   &__sub-box {
+  }
+}
+.design {
+  &__title {
+    background-color: aqua;
+  }
+  &__sub-box {
+  }
+}
+.color-box {
+  &__title {
+    font-family: $opensans;
+  }
+  &__form {
+  }
+}
+.palette {
+  &__box {
+    width: 90px;
+    height: 75px;
+  }
+  &__box--darkGreen {
+    background-color: $darkGreen;
+  }
+  &__box--medGreen {
+    background-color: $mediumBlue;
+  }
+  &__box--lightGreen {
+    background-color: $lightGreen;
+  }
+  &__box--darkRed {
+    background-color: $darkRed;
+  }
+  &__box--medRed {
+    background-color: $red;
+  }
+  &__box--lightRed {
+    background-color: $darkOrange;
+  }
+  &__box--darkGray {
+    background-color: $bluishGray;
+  }
+  &__box--beige {
+    background-color: $yellowishBeige;
+  }
+  &__box--lightGray {
+    background-color: $lightBlue;
   }
 }
