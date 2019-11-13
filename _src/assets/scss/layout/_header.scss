@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 111px;
+
+    @media all and (min-width: 768px) {
+    justify-content: start;
+    padding-left: 40px;
+    }
+    &__img {
+        width: 201px;
+    }
+}
