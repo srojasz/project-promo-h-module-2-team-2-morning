@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+
+
+  &__label{
+    font-family: $opensans;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: $darkGreen;
+    margin-bottom: 0.7rem;
+    text-transform: none;
+    
+
+  }
+
+  &__input{
+    width: 28.1rem;
+    height: 3rem;
+    border: 0.1rem solid $lightGreen; 
+    margin-bottom: 2rem;
+    font-family: $opensans;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #c5c5c5;
+
+    &--img{
+     display: flex;
+     
+    }
+
+    &--miniature{
+      width: 3rem;
+      height: 3rem;
+      border: solid 0.1rem $lightGreen;
+      display: inline; 
+      margin-left: 2rem;
+    }
+  }
+
+  .form__button{
+    width: 14rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    background-color: $mediumOrange;
+    border: 0;
+    color: $white;
+    font-family: $opensans;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    
+  }
+}
+
