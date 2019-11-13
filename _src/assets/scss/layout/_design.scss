@@ -1,0 +1,112 @@
+.collapsable-box {
+  font-family: $opensans;
+  color: $grey;
+  text-transform: uppercase;
+  margin: 0 2rem;
+  /* background-color: slategrey; */
+  &__icon {
+    color: $mediumOrange;
+    font-size: 1.8rem;
+    /* background-color: yellow; */
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1rem;
+    display: inline-block;
+  }
+  &__sub-box {
+  }
+}
+.design {
+  &__title {
+    /* background-color: aqua; */
+  }
+  &__sub-box {
+  }
+}
+.color-box {
+  /* background-color: blueviolet; */
+  display: flex;
+  border-bottom: solid 0.2rem $lightGrey;
+  min-height: 14rem;
+  &__title {
+    /* background-color: red; */
+    margin-right: 7rem;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  &__form-box {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &__form {
+    /* background-color: salmon; */
+    margin-bottom: 2rem;
+  }
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__input {
+    min-width: 1.7rem;
+    margin-right: 0.5rem;
+  }
+}
+.palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  &__box {
+    /* background-color: yellowgreen; */
+  }
+  &__box--darkGreen {
+    background-color: $darkGreen;
+    width: 3rem;
+    height: 2.5rem;
+  }
+  &__box--medGreen {
+    background-color: $mediumBlue;
+    width: 30px;
+    height: 25px;
+  }
+  &__box--lightGreen {
+    background-color: $lightGreen;
+    width: 30px;
+    height: 25px;
+  }
+  &__box--darkRed {
+    background-color: $darkRed;
+    width: 30px;
+    height: 25px;
+  }
+  &__box--medRed {
+    background-color: $red;
+    width: 30px;
+    height: 25px;
+  }
+  &__box--lightRed {
+    background-color: $darkOrange;
+    width: 30px;
+    height: 25px;
+  }
+  &__box--darkGray {
+    background-color: $bluishGray;
+    width: 30px;
+    height: 25px;
+  }
+  &__box--beige {
+    background-color: $yellowishBeige;
+    width: 30px;
+    height: 25px;
+  }
+  &__box--lightGray {
+    background-color: $lightBlue;
+    width: 30px;
+    height: 25px;
+  }
+}
