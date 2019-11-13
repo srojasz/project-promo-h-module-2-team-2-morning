@@ -2,43 +2,67 @@
   font-family: $opensans;
   color: $grey;
   text-transform: uppercase;
-  border-bottom: $grey;
   margin: 0 2rem;
+  /* background-color: slategrey; */
+  &__icon {
+    color: $mediumOrange;
+    font-size: 1.8rem;
+    /* background-color: yellow; */
+  }
   &__title {
     font-size: 1.8rem;
     font-weight: 600;
+    padding: 1rem;
+    display: inline-block;
   }
   &__sub-box {
-    font-size: 1.4rem;
   }
 }
 .design {
   &__title {
-    background-color: aqua;
-    margin: 2.7rem auto 0rem 5.1rem;
+    /* background-color: aqua; */
   }
   &__sub-box {
   }
 }
 .color-box {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: flex;
-  margin-top: 2.2rem;
-  margin-left: 3.9rem;
-  border-bottom: $grey;
+  border-bottom: solid 0.2rem $lightGrey;
+  min-height: 14rem;
   &__title {
-    background-color: red;
-    margin: 0 21.9rem 0 3.9rem;
+    /* background-color: red; */
+    margin-right: 7rem;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  &__form-box {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   &__form {
-    background-color: salmon;
+    /* background-color: salmon; */
+    margin-bottom: 2rem;
+  }
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__input {
+    min-width: 1.7rem;
+    margin-right: 0.5rem;
   }
 }
 .palette {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   &__box {
+    /* background-color: yellowgreen; */
   }
   &__box--darkGreen {
     background-color: $darkGreen;
