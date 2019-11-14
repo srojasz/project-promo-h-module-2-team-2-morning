@@ -2,7 +2,7 @@
   font-family: $opensans;
   color: $grey;
   text-transform: uppercase;
-  margin: 0 2rem;
+  border-bottom: solid 0.2rem $lightGrey;
   /* background-color: slategrey; */
   &__icon {
     color: $mediumOrange;
@@ -28,7 +28,7 @@
 .color-box {
   /* background-color: blueviolet; */
   display: flex;
-  border-bottom: solid 0.2rem $lightGrey;
+
   min-height: 14rem;
   &__title {
     /* background-color: red; */
