@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #f5f5f5;
+  background: $lightPink;
 
   &__logo {
     width: 25rem;
@@ -14,12 +14,12 @@
     font-size: 1.92rem;
     font-family: "Merriweather", serif;
     font-weight: 900;
-    color: #e17334;
+    color: $mediumOrange;
     padding-top: 3.54rem;
   }
 
   &__text {
-    color: #114e4e;
+    color: $darkGreen;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-size: 1.28rem;
@@ -45,7 +45,7 @@
   height: 2.6rem;
   width: 3.2rem;
   font-size: 2.24rem;
-  color: #e17334;
+  color: $mediumOrange;
 
   margin-top: 1.5rem;
 }
@@ -55,25 +55,24 @@
   font-size: 2.24rem;
   height: 2.6rem;
   width: 3.2rem;
-  color: #e17334;
+  color: $mediumOrange;
   margin-top: 1.5rem;
 }
 
 .start-button {
   margin: 0 auto 3rem auto;
   display: flex;
-  // align-self: end;
   justify-content: center;
   align-items: center;
   font-family: "Open Sans", sans-serif;
 
   font-size: 1.6rem;
-  color: antiquewhite;
+  color: $white;
   width: 12.9rem;
   height: 4.2rem;
   border-radius: 2.1rem;
 
-  background-color: #438792;
+  background-color: $mediumBlue;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -97,7 +96,6 @@
     }
 
     &__text {
-      color: #114e4e;
       font-size: 1.6rem;
       max-width: 33.1rem;
     }
@@ -106,6 +104,10 @@
       margin: 2.7rem 22.1rem 18.6rem 22.2rem;
       width: 32.5rem;
     }
+  }
+
+  .start-button {
+    margin: 0 auto 5.9rem auto;
   }
 
   .grid-text {
