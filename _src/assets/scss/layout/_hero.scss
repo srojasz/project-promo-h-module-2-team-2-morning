@@ -1,9 +1,10 @@
-.header {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: $lightPink;
+  height: 100%;
 
   &__logo {
     width: 25rem;
@@ -30,13 +31,14 @@
     margin: 1.78rem 2.64rem 3.86rem 2.56rem;
     display: grid;
     justify-items: center;
-
+    color: $grey;
     width: 26.8rem;
     height: 7.38rem;
     border: solid 0.16rem rgba(225, 115, 52, 0.21);
     border-radius: 0.4rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    font-family: "Open Sans", sans-serif;
   }
 }
 
@@ -60,7 +62,7 @@
 }
 
 .start-button {
-  margin: 0 auto 3rem auto;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +71,7 @@
   font-size: 1.6rem;
   color: $white;
   width: 12.9rem;
-  height: 4.2rem;
+  min-height: 4.2rem;
   border-radius: 2.1rem;
 
   background-color: $mediumBlue;
@@ -84,10 +86,12 @@
 }
 
 @media all and (min-width: 768px) {
-  .header {
+  .hero {
+
     &__logo {
       width: 41.9rem;
       padding-top: 15rem;
+      // margin-top: 6rem;
     }
 
     &__title {
@@ -101,13 +105,14 @@
     }
 
     &__steps {
-      margin: 2.7rem 22.1rem 18.6rem 22.2rem;
+      // margin: 2.7rem 22.1rem 18.6rem 22.2rem;
       width: 32.5rem;
+      margin-bottom: 5rem;
     }
   }
 
   .start-button {
-    margin: 0 auto 5.9rem auto;
+    margin-bottom: 5.9rem;
   }
 
   .grid-text {
