@@ -2,7 +2,7 @@
     font-family: $opensans;
     color: $grey;
     text-transform: uppercase;
-    border-bottom: solid 0.2rem $lightGrey;
+    min-width: 32rem;
 
   &__icon {
     color: $mediumOrange;
@@ -15,10 +15,14 @@
     padding: 1rem;
     display: inline-block;
   }
+  &__sub-box {
+    
+}
   }
 
   .i-h2-i{
       display: flex;
       justify-content: space-between;  
       align-items: center;
+      
     }

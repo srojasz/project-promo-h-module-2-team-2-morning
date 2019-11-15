@@ -6,8 +6,11 @@
 @import "layout/design";
 @import "layout/fill";
 @import "layout/share";
+@import "layout/footer";
+
 
 .main {
+
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
@@ -16,12 +19,14 @@
 }
 
 .card {
+  background-color: seagreen;
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
   height: 45.7rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  
 
   @media all and (min-width: 768px) {
     width: 40%;
@@ -79,6 +84,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   @media all and (min-width: 768px) {
     width: 60%;
@@ -102,4 +108,3 @@
   margin: 0;
 }
 
-@import "layout/footer";

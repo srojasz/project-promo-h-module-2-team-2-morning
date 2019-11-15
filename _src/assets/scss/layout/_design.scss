@@ -1,4 +1,6 @@
 .design {
+  border-bottom: solid 0.2rem $lightGrey;
+  
   &__title {
   
   }
@@ -9,7 +11,7 @@
 
   display: flex;
 
-  min-height: 14rem;
+ /*  min-height: 14rem; */
   &__title {
 
     margin-right: 7rem;
