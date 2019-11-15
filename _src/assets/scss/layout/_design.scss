@@ -1,37 +1,17 @@
-.collapsable-box {
-  font-family: $opensans;
-  color: $grey;
-  text-transform: uppercase;
-  border-bottom: solid 0.2rem $lightGrey;
-  /* background-color: slategrey; */
-  &__icon {
-    color: $mediumOrange;
-    font-size: 1.8rem;
-    /* background-color: yellow; */
-  }
-  &__title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 1rem;
-    display: inline-block;
-  }
-  &__sub-box {
-  }
-}
 .design {
   &__title {
-    /* background-color: aqua; */
+  
   }
   &__sub-box {
   }
 }
 .color-box {
-  /* background-color: blueviolet; */
+
   display: flex;
 
   min-height: 14rem;
   &__title {
-    /* background-color: red; */
+
     margin-right: 7rem;
     margin-left: 1rem;
     font-size: 1.4rem;
@@ -44,7 +24,7 @@
     flex-wrap: wrap;
   }
   &__form {
-    /* background-color: salmon; */
+
     margin-bottom: 2rem;
   }
   &__label {
@@ -62,7 +42,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   &__box {
-    /* background-color: yellowgreen; */
+
   }
   &__box--darkGreen {
     background-color: $darkGreen;
