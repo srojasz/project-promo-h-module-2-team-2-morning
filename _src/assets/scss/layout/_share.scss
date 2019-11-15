@@ -1,4 +1,26 @@
+.button {
+  background: $lightGrey;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+}
+
+.button active {
+  background: $mediumOrange;
+}
+
+.fa-address-card {
+  color: $white;
+  padding-right: 0.9rem;
+}
+
 .button__title {
-  border: solid 2px orange;
-  background: orangered;
+  font-size: 1.8rem;
+  font-family: $opensans;
 }
