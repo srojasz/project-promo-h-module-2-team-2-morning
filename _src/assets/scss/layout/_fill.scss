@@ -12,7 +12,6 @@
     line-height: 2rem;
     color: $darkGreen;
     margin-bottom: 0.7rem;
-    text-transform: none;
   }
 
   &__input {
@@ -27,7 +26,6 @@
     padding-left: 1rem;
     width: 100%;
 
-
     &--img {
       display: flex;
     }
@@ -41,7 +39,11 @@
     }
   }
 
-  .form__button {
+  .form__file {
+    display: none;
+  }
+
+  .form__file--label {
     width: 14rem;
     height: 3rem;
     margin-bottom: 2rem;
@@ -52,5 +54,7 @@
     font-family: $opensans;
     font-size: 1.4rem;
     line-height: 1.43;
+    padding: 0.5rem 2rem;
+    text-transform: none;
   }
 }

@@ -1,28 +1,26 @@
 .collapsable-box {
-    font-family: $opensans;
-    color: $grey;
-    text-transform: uppercase;
-    min-width: 32rem;
+  font-family: $opensans;
+  color: $grey;
+  min-width: 32rem;
 
   &__icon {
     color: $mediumOrange;
     font-size: 1.8rem;
-
   }
   &__title {
     font-size: 1.8rem;
     font-weight: 600;
     padding: 1rem;
     display: inline-block;
+    text-transform: uppercase;
   }
   &__sub-box {
-    
-}
+    text-transform: uppercase;
   }
+}
 
-  .i-h2-i{
-      display: flex;
-      justify-content: space-between;  
-      align-items: center;
-      
-    }
+.i-h2-i {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
