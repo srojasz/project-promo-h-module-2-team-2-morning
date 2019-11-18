@@ -63,3 +63,25 @@ function changeRole() {
 
 formInputName.addEventListener("keyup", changeName);
 formInputRole.addEventListener("keyup", changeRole);
+
+// Iconos
+
+const phoneIcon = document.querySelector(".card__icon--phone");
+
+const mailIcon = document.querySelector(".card__icon--mail");
+
+const linkedinIcon = document.querySelector(".card__icon--linkedin");
+
+const githubIcon = document.querySelector(".card__icon--github");
+
+const phoneInput = document.querySelector(".js-phone");
+
+function changePhone() {
+  if (phoneInput.value !== isFilled) {
+    phoneIcon.classList.remove("js-icon-hidden");
+  } else {
+    phoneIcon.classList.add("js-icon-hidden");
+  }
+}
+
+phoneInput.addEventListener("keyup", changePhone);
