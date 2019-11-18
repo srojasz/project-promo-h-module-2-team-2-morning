@@ -56,13 +56,17 @@
     height: 3rem;
     border: 0.1rem solid $white;
 
+    font-family: $opensans;
     color: $grey;
     font-size: 1.2rem;
     line-height: 1.67;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
+
     align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
 
   &__header {
@@ -144,6 +148,11 @@
 
 i {
   font-size: 1.8rem;
+}
+
+.fa-trash-alt {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
 }
 
 // Paletas
