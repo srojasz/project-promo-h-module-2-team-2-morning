@@ -8,16 +8,14 @@
 @import "layout/share";
 @import "layout/footer";
 
-
 .main {
   background-image: linear-gradient(to bottom, $lightPink, $white 9%);
-  
+
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     padding: 0 4rem 0 0;
-    
   }
 }
 
@@ -28,7 +26,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  
 
   @media all and (min-width: 768px) {
     width: 40%;
@@ -48,9 +45,8 @@
     justify-content: center;
 
     @media all and (min-width: 768px) {
-    margin-top:13.5rem;
-    
-  }
+      margin-top: 13.5rem;
+    }
   }
   &__reset {
     margin-top: 3.8rem;
@@ -72,16 +68,15 @@
   &__header {
     border-left: 5px solid $mediumBlue;
     margin: 2.1rem 1.4rem 1rem 0rem;
-    padding-left: 1.5rem ;
+    padding-left: 1.5rem;
   }
 
   &__name {
     font-family: $montserrat;
-    color: $darkGreen;
+    // color: $darkGreen;
     font-size: 1.8rem;
     line-height: 1.11;
     margin-bottom: 0.4rem;
-    
   }
 
   &__role {
@@ -89,9 +84,7 @@
     color: $grey;
     font-size: 1.6rem;
     line-height: 1.25;
-    
   }
-
 
   &__social {
     display: flex;
@@ -112,8 +105,6 @@
     color: $darkGreen;
     margin: 0 0.5rem 0 0.5rem;
   }
-
-
 }
 
 .features {
@@ -122,7 +113,6 @@
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to bottom, $lightPink, $white 9%);
-  
 
   @media all and (min-width: 768px) {
     width: 60%;
@@ -148,12 +138,51 @@
 }
 
 .user-details {
-  
   padding: 0;
   margin: 0;
 }
 
-
 i {
   font-size: 1.8rem;
+}
+
+// Paletas
+
+.card-container.palette1 {
+  color: $darkGreen;
+
+  .card__header {
+    border-left: 5px solid $mediumBlue;
+  }
+
+  .card__icon {
+    color: $darkGreen;
+    border: 2px solid $lightGreen;
+  }
+}
+
+.card-container.palette2 {
+  color: $darkRed;
+
+  .card__header {
+    border-left: 5px solid $red;
+  }
+
+  .card__icon {
+    color: $darkRed;
+    border: 2px solid $darkOrange;
+  }
+}
+
+.card-container.palette3 {
+  color: $bluishGray;
+
+  .card__header {
+    border-left: 5px solid $yellowishBeige;
+  }
+
+  .card__icon {
+    color: $bluishGray;
+    border: 2px solid $lightBlue;
+  }
 }
