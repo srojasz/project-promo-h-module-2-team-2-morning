@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/card.css" />
+        <title>Design your card</title>
+        <script src="https://kit.fontawesome.com/b9e106a0ae.js"
+        crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <header class="header">
+            <div> <a href="index.html"><img class="header__img" src="./assets/images/logo-profilecards.svg" title="Font Awesome Card"
+        alt="Logo de Font Awesome Card" /></a>
+
+            </div>
+        </header>
+        <main class="main">
+            <section class="card">
+                <div class="card__wrapper"> <a class="card__reset js-card-reset" href="#" title="Resetea los cambios">
+          <i class="far fa-trash-alt"></i> Reset
+        </a>
+
+                    <article class="card-container js-card-container">
+                        <div class="user-details">
+                            <header class="card__header js-card__header">
+                                 <h1 class="card__name js-card__name">
+                Nombre apellido
+              </h1>
+
+                                 <h2 class="card__role js-card__role">
+                Front-end developer
+              </h2>
+
+                            </header>
+                        </div>
+                        <div class="card__img-container">
+                            <!-- <img class="card__img" src="../assets/images/adalaber.jpg" title="Tu
+                            fotografía" alt="Fotografía de la tarjeta de visita" />--></div>
+                        <footer class="card__social"> <a class="card__icon js-card__icon js-card__icon--phone js-icon-deactivated"
+                            target="_blank" title="Contacta por teléfono" href=""><i class="fas fa-mobile-alt"></i></a>
+
+                            <a
+                            class="card__icon js-card__icon js-card__icon--email js-icon-deactivated"
+                            target="_blank" title="Escríbeme por email" href=""><i class="far fa-envelope"></i>
+                                </a> <a class="card__icon js-card__icon js-card__icon--linkedin icon-deactivated js-icon-deactivated"
+                                target="_blank" title="Añádeme a tu red de Linkedin" href=""><i class="fab fa-linkedin-in"></i></a>
+
+                                <a
+                                class="card__icon js-card__icon js-card__icon--github js-icon-deactivated"
+                                target="_blank" title="Visita mi portfolio de Github" href=""><i class="fab fa-github-alt"></i>
+                                    </a>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+            <section class="features">
+                <section class="collapsable-box design">
+                    <div class="collapsable-box i-h2-i">
+                        <div class="i-h2-i__ih2"> <i class="far fa-object-ungroup collapsable-box__icon"></i>
+
+                             <h2 class="collapsable-box__title design__title">Diseña
+      </h2>
+
+                        </div>
+                        <div class="i-h2-i__iArrow"> <i class="fas fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+                    <div class="collapsable-box__sub-box color-box">
+                         <h3 class="color-box__title">Colores</h3>
+
+                        <div class="color-box__form-box">
+                            <div class="color-box__form">
+                                <label for="palette1" class="color-box__label">
+                                    <input id="palette1" type="radio" value="palette1" name="palette" class="color-box__input"
+                                    />
+                                    <div class="palette">
+                                        <div class="palette__box--darkGreen"></div>
+                                        <div class="palette__box--medGreen"></div>
+                                        <div class="palette__box--lightGreen"></div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="color-box__form">
+                                <label for="palette2" class="color-box__label">
+                                    <input id="palette2" type="radio" value="palette2" name="palette" class="color-box__input"
+                                    />
+                                    <div class="palette">
+                                        <div class="palette__box--darkRed"></div>
+                                        <div class="palette__box--medRed"></div>
+                                        <div class="palette__box--lightRed"></div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="color-box__form">
+                                <label for="palette3" class="color-box__label">
+                                    <input id="palette3" type="radio" value="palette3" name="palette" class="color-box__input"
+                                    />
+                                    <div class="palette">
+                                        <div class="palette__box--darkGray"></div>
+                                        <div class="palette__box--beige"></div>
+                                        <div class="palette__box--lightGray"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="collapsable-box fill">
+                    <div class="collapsable-box i-h2-i">
+                        <div class="i-h2-i__ih2"> <i class="far fa-keyboard collapsable-box__icon"></i>
+
+                             <h2 class="collapsable-box__title fill">
+        Rellena
+      </h2>
+
+                        </div>
+                        <div class="i-h2-i__iArrow"> <i class="fas fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+                    <form class="form" action="" method="">
+                        <label class="form__label" for="name">Nombre completo</label>
+                        <input type="text" class="form__input js-name"
+                        name="name" id="name" placeholder="Ej: Sally Jill" pattern="@@pattern"
+                        required />
+                        <label class="form__label" for="name">Puesto</label>
+                        <input type="text" class="form__input js-role" name="role"
+                        id="role" placeholder="Ej: Front-end unicorn" pattern="@@pattern" required
+                        />
+                        <label class="form__label" for="img">Imagen de perfil</label>
+                        <div class="form__input--img">
+                            <input type="file" class="form__file" name="file" id="file" accept="image/*"
+                            />
+                            <label for="file" class="form__file--label">Añadir imagen</label>
+                            <div class="form__input--miniature"></div>
+                        </div>
+                        <label class="form__label" for="name">Email</label>
+                        <input type="email" class="form__input js-email" name="email"
+                        id="email" placeholder="Ej: sally-hill@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        required />
+                        <label class="form__label" for="name">Teléfono</label>
+                        <input type="tel" class="form__input js-phone" name="phone"
+                        id="phone" placeholder="Ej: 555-55-55-55" pattern="[0-9]{9}" required />
+                        <label class="form__label" for="name">Linkedin</label>
+                        <input type="url" class="form__input js-linkedin" name="linkedin"
+                        id="linkedin" placeholder="Ej: linkedin.com/sally.hill" pattern="@@pattern"
+                        required />
+                        <label class="form__label" for="name">Github</label>
+                        <input type="url" class="form__input js-github" name="github"
+                        id="github" placeholder="Ej: @sally-hill" pattern="@@pattern" required
+                        />
+                    </form>
+                </section>
+                <div class="collapsable-box share">
+                    <div class="collapsable-box i-h2-i">
+                        <div class="i-h2-i__ih2"> <i class="fas fa-share-alt collapsable-box__icon"></i>
+
+                             <h2 class="collapsable-box__title">Comparte</h2>
+
+                        </div>
+                        <div class="i-h2-i__iArrow"> <i class="fas fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="button"> <i class="far fa-address-card collapsable-box__icon"></i>
+
+                             <h2 class="button__title">Crear tarjeta</h2>
+
+                        </div>
+                    </div>
+                    <!-- <div class="button-box">
+      <div class="button-box__button">
+        <i class="button-box__far fa-address-card collapsable-box__icon"></i>
+        <h2 class="button-box__title">Crear tarjeta</h2>
+      </div>
+    </div> -->
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">Awesome profile-cards @2018</p>
+            <img src="./assets/images/logo-adalab-80px.png"
+            class="footer__logo" alt="logo Adalab" />
+        </footer>
+        <script type="text/javascript" src="../assets/js/main.js"></script>
+    </body>
+
+</html>
