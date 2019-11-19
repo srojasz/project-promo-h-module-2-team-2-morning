@@ -1,38 +1,41 @@
 .share {
   border-bottom: solid 0.2rem $lightGrey;
 }
-.button {
+
+.button__input {
+  display: none;
+}
+.button__box {
   display: flex;
   justify-content: center;
 
-.button {
-  background: $lightGrey;
-  width: 199px;
-  height: 50px;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .button {
+    background: $lightGrey;
+    width: 199px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  color: $white;
-  margin: 3rem 0;
- 
-}
+    color: $white;
+    margin: 3rem 0;
+  }
 
-.button active {
-  background: $mediumOrange;
-}
+  .button active {
+    background: $mediumOrange;
+  }
 
-.fa-address-card {
-  color: $white;
-  padding-right: 0.9rem;
-}
+  .fa-address-card {
+    color: $white;
+    padding-right: 0.9rem;
+  }
 
-.button__title {
-  font-size: 1.8rem;
-  font-family: $opensans;
-}
+  .button__title {
+    font-size: 1.8rem;
+    font-family: $opensans;
+  }
 }
 /* .button-box {
   display: flex;
