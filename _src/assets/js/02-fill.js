@@ -1,34 +1,7 @@
 "use strict";
+console.log("main");
 
-// Paletas
-
-const palette1 = document.querySelector("#palette1");
-const palette2 = document.querySelector("#palette2");
-const palette3 = document.querySelector("#palette3");
-
-const cardContainer = document.querySelector(".js-card-container");
-
-function changeColorToPalette1() {
-  cardContainer.classList.remove("palette2");
-  cardContainer.classList.remove("palette3");
-  cardContainer.classList.add("palette1");
-}
-
-function changeColorToPalette2() {
-  cardContainer.classList.remove("palette1");
-  cardContainer.classList.remove("palette3");
-  cardContainer.classList.add("palette2");
-}
-
-function changeColorToPalette3() {
-  cardContainer.classList.remove("palette1");
-  cardContainer.classList.remove("palette2");
-  cardContainer.classList.add("palette3");
-}
-
-palette1.addEventListener("click", changeColorToPalette1);
-palette2.addEventListener("click", changeColorToPalette2);
-palette3.addEventListener("click", changeColorToPalette3);
+///////////// la otra forma
 
 // Fill Inputs
 
@@ -86,10 +59,8 @@ emailInput.addEventListener("keyup", changeEmail);
 const phoneIcon = document.querySelector(".card__icon--phone");
 const phoneInput = document.querySelector(".js-phone");
 
-const phoneInputNumb = parseInt(phoneInput.value);
-
 function changePhone() {
-  if (phoneInputNumb !== isFilled && phoneInputNumb !== isNaN) {
+  if (phoneInput.value !== isFilled) {
     phoneIcon.classList.remove("js-icon-deactivated");
   } else {
     phoneIcon.classList.add("js-icon-deactivated");
