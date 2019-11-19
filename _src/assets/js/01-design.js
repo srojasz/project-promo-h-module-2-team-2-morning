@@ -30,3 +30,15 @@ function startPalette() {
   currentPalette.checked = true;
   currentPalette.click();
 }
+
+// Opción regulera hasta que creemos una función que sea startPage
+
+function reset() {
+  startPalette();
+  cardName.innerHTML = "Nombre apellido";
+  cardRole.innerHTML = "Front-end developer";
+}
+
+const resetButton = document.querySelector(".js-card-reset");
+
+resetButton.addEventListener("click", reset);

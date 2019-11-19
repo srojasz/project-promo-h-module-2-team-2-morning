@@ -1,7 +1,5 @@
 "use strict";
-console.log("main");
-
-///////////// la otra forma
+console.log("fill");
 
 // Fill Inputs
 
@@ -41,13 +39,15 @@ formInputRole.addEventListener("keyup", changeRole);
 
 // Email
 
-const emailIcon = document.querySelector(".card__icon--email");
+const emailIcon = document.querySelector(".js-card__icon--email");
 
 const emailInput = document.querySelector(".js-email");
 
 function changeEmail() {
-  if (emailInput.value !== isFilled) {
+  const emailValue = emailInput.value;
+  if (emailValue !== isFilled) {
     emailIcon.classList.remove("js-icon-deactivated");
+    emailIcon.href = `mailto:${emailValue}`;
   } else {
     emailIcon.classList.add("js-icon-deactivated");
   }
@@ -56,25 +56,30 @@ emailInput.addEventListener("keyup", changeEmail);
 
 //Phone
 
-const phoneIcon = document.querySelector(".card__icon--phone");
+const phoneIcon = document.querySelector(".js-card__icon--phone");
 const phoneInput = document.querySelector(".js-phone");
 
 function changePhone() {
-  if (phoneInput.value !== isFilled) {
+  const phoneValue = phoneInput.value;
+  if (phoneValue !== isFilled) {
     phoneIcon.classList.remove("js-icon-deactivated");
+    phoneIcon.href = `tel:${phoneValue}`;
   } else {
     phoneIcon.classList.add("js-icon-deactivated");
   }
 }
+
 phoneInput.addEventListener("keyup", changePhone);
 
 // Linkedin
-const linkedinIcon = document.querySelector(".card__icon--linkedin");
+const linkedinIcon = document.querySelector(".js-card__icon--linkedin");
 const linkedinInput = document.querySelector(".js-linkedin");
 
 function changeLinkedin() {
-  if (linkedinInput.value !== isFilled) {
+  const linkedinValue = linkedinInput.value;
+  if (linkedinValue !== isFilled) {
     linkedinIcon.classList.remove("js-icon-deactivated");
+    linkedinIcon.href = `https://${linkedinInput.value}`;
   } else {
     linkedinIcon.classList.add("js-icon-deactivated");
   }
@@ -82,12 +87,14 @@ function changeLinkedin() {
 linkedinInput.addEventListener("keyup", changeLinkedin);
 
 //GitHub
-const githubIcon = document.querySelector(".card__icon--github");
+const githubIcon = document.querySelector(".js-card__icon--github");
 const githubInput = document.querySelector(".js-github");
 
 function changeGithub() {
-  if (githubInput.value !== isFilled) {
+  const gitHubValue = githubInput.value;
+  if (gitHubValue !== isFilled) {
     githubIcon.classList.remove("js-icon-deactivated");
+    githubIcon.href = `https://www.github.com/${gitHubValue}`;
   } else {
     githubIcon.classList.add("js-icon-deactivated");
   }

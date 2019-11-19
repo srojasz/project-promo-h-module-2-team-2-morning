@@ -19,7 +19,7 @@
   <main class="main">
     <section class="card">
       <div class="card__wrapper">
-        <a class="card__reset" href="#" title="Resetea los cambios">
+        <a class="card__reset js-card-reset" href="#" title="Resetea los cambios">
           <i class="far fa-trash-alt"></i> Reset
         </a>
         <article class="card-container js-card-container">
@@ -38,10 +38,10 @@
               alt="Fotografía de la tarjeta de visita" /> -->
           </div>
           <footer class="card__social">
-            <a class="card__icon js-card__icon card__icon--phone js-icon-deactivated" title="Contacta por teléfono" href=""><i class="fas fa-mobile-alt"></i></a>
-            <a class="card__icon js-card__icon card__icon--email js-icon-deactivated" title="Escríbeme por email" href=""><i class="far fa-envelope"></i></a>
-            <a class="card__icon js-card__icon card__icon--linkedin js-icon-deactivated" title="Añádeme a Linkedin" href=""><i class="fab fa-linkedin-in"></i></a>
-            <a class="card__icon js-card__icon card__icon--github js-icon-deactivated" title="Visita mi portfolio de Github" href=""><i class="fab fa-github-alt"></i></a>
+            <a class="card__icon js-card__icon js-card__icon--phone js-icon-deactivated" target="_blank" title="Contacta por teléfono" href=""><i class="fas fa-mobile-alt"></i></a>
+            <a class="card__icon js-card__icon js-card__icon--email js-icon-deactivated" target="_blank" title="Escríbeme por email" href=""><i class="far fa-envelope"></i></a>
+            <a class="card__icon js-card__icon js-card__icon--linkedin icon-deactivated js-icon-deactivated" target="_blank" title="Añádeme a tu red de Linkedin" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="card__icon js-card__icon js-card__icon--github js-icon-deactivated" target="_blank" title="Visita mi portfolio de Github" href=""><i class="fab fa-github-alt"></i></a>
           </footer>
         </article>
       </div>
@@ -53,6 +53,7 @@
     </section>
   </main>
   <partial src="_footer.html"></partial>
+
 
   <script type="text/javascript" src="../assets/js/main.js"></script>
 </body>

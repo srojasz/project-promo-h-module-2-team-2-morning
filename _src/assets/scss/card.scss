@@ -168,6 +168,9 @@ i {
     color: $darkGreen;
     border: 2px solid $lightGreen;
   }
+  .js-icon-deactivated {
+    color: $lightGrey;
+  }
 }
 
 .card-container.palette2 {
@@ -180,6 +183,9 @@ i {
   .card__icon {
     color: $darkRed;
     border: 2px solid $darkOrange;
+  }
+  .js-icon-deactivated {
+    color: $lightGrey;
   }
 }
 
@@ -194,8 +200,8 @@ i {
     color: $bluishGray;
     border: 2px solid $lightBlue;
   }
-}
 
-.js-icon-deactivated {
-  color: $lightGrey;
+  .js-icon-deactivated {
+    color: $lightGrey;
+  }
 }
