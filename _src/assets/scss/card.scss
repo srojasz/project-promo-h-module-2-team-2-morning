@@ -20,7 +20,8 @@
 }
 
 .card {
-  background-image: linear-gradient(to bottom, $silver, $paleGrey);
+/*   background-image: linear-gradient(to bottom, $silver, $paleGrey); */
+  background-image: url("../images/background.png");
   height: 45.7rem;
 
   display: flex;
@@ -55,6 +56,7 @@
     width: 7.5rem;
     height: 3rem;
     border: 0.1rem solid $white;
+    background: $white;
 
     font-family: $opensans;
     color: $grey;
@@ -112,10 +114,9 @@
 }
 
 .features {
-  padding: 2.7rem 0rem 3rem 0rem;
+  padding: 2.7rem 2rem 3rem 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-image: linear-gradient(to bottom, $lightPink, $white 9%);
 
   @media all and (min-width: 768px) {
@@ -136,7 +137,7 @@
 .card__img-container {
   width: 24rem;
   height: 20rem;
-  background-image: url("../images/adalaber.jpg");
+  background-image: url("../images/fotodefault.png");
   background-size: cover;
   background-position: center;
 }
