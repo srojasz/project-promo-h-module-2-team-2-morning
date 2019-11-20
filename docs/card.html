@@ -80,7 +80,7 @@
                     <div class="collapsable-box__sub-box color-box">
                          <h3 class="color-box__title">Colores</h3>
 
-                        <form class="color-box__form-box">
+                        <div class="color-box__form-box">
                             <div class="color-box__form">
                                 <label for="palette1" class="color-box__label">
                                     <input id="palette1" type="radio" value="palette1" name="palette" class="color-box__input"
@@ -114,7 +114,7 @@
                                     </div>
                                 </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </section>
                 <section class="collapsable-box fill">
@@ -133,12 +133,10 @@
                     <form class="form" action="" method="">
                         <label class="form__label" for="name">Nombre completo</label>
                         <input type="text" class="form__input js-name"
-                        name="name" id="name" placeholder="Ej: Sally Jill" pattern="@@pattern"
-                        required />
+                        name="name" id="name" placeholder="Ej: Sally Jill" required />
                         <label class="form__label" for="name">Puesto</label>
                         <input type="text" class="form__input js-role" name="role"
-                        id="role" placeholder="Ej: Front-end unicorn" pattern="@@pattern" required
-                        />
+                        id="role" placeholder="Ej: Front-end unicorn" required />
                         <label class="form__label" for="img">Imagen de perfil</label>
                         <div class="form__input--img">
                             <input type="file" class="form__file" name="file" id="file" accept="image/*"
@@ -148,19 +146,16 @@
                         </div>
                         <label class="form__label" for="name">Email</label>
                         <input type="email" class="form__input js-email" name="email"
-                        id="email" placeholder="Ej: sally-hill@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        required />
+                        id="email" placeholder="Ej: sally-hill@gmail.com" required />
                         <label class="form__label" for="name">Teléfono</label>
                         <input type="tel" class="form__input js-phone" name="phone"
-                        id="phone" placeholder="Ej: 555-55-55-55" pattern="[0-9]{9}" required />
+                        id="phone" placeholder="Ej: 555-55-55-55" required />
                         <label class="form__label" for="name">Linkedin</label>
-                        <input type="url" class="form__input js-linkedin" name="linkedin"
-                        id="linkedin" placeholder="Ej: linkedin.com/sally.hill" pattern="@@pattern"
-                        required />
+                        <input type="text" class="form__input js-linkedin" name="linkedin"
+                        id="linkedin" placeholder="Ej: linkedin.com/sally.hill" required />
                         <label class="form__label" for="name">Github</label>
-                        <input type="url" class="form__input js-github" name="github"
-                        id="github" placeholder="Ej: @sally-hill" pattern="@@pattern" required
-                        />
+                        <input type="text" class="form__input js-github" name="github"
+                        id="github" placeholder="Ej: @sally-hill" required />
                         <div class="collapsable-box share">
                             <div class="collapsable-box i-h2-i">
                                 <div class="i-h2-i__ih2"> <i class="fas fa-share-alt collapsable-box__icon"></i>
@@ -172,27 +167,18 @@
 
                                 </div>
                             </div>
-                            <div class="button__box">
-                                <input class="button__input" type="submit" name="submit__button" id="submit__button"
-                                value="Compartir tarjeta">
-                                <button class="button"> <i class="far fa-address-card collapsable-box__icon"></i>
+                            <section class="share__container">
+                                <div class="button__box">
+                                    <input class="button__input" type="submit" name="submit__button" id="submit__button"
+                                    value="Compartir tarjeta">
+                                    <button class="button"> <i class="far fa-address-card collapsable-box__icon"></i>
 
-                                     <h2 class="button__title">Crear tarjeta</h2>
+                                         <h2 class="button__title">Crear tarjeta</h2>
 
-                                </button>
-                            </div>
-                            <!-- <div class="button">
-    <div class="button">
-      <i class="far fa-address-card collapsable-box__icon"></i>
-      <h2 class="button__title">Crear tarjeta</h2>
-    </div>
-  </div> -->
-                            <!-- <div class="button-box">
-      <div class="button-box__button">
-        <i class="button-box__far fa-address-card collapsable-box__icon"></i>
-        <h2 class="button-box__title">Crear tarjeta</h2>
-      </div>
-    </div> -->
+                                    </button>
+                                </div>
+                                <div class="share__twitter hidden">Tu url me mola</div>
+                            </section>
                     </form>
                 </section>
             </section>
