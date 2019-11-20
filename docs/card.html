@@ -80,7 +80,7 @@
                     <div class="collapsable-box__sub-box color-box">
                          <h3 class="color-box__title">Colores</h3>
 
-                        <div class="color-box__form-box">
+                        <form class="color-box__form-box">
                             <div class="color-box__form">
                                 <label for="palette1" class="color-box__label">
                                     <input id="palette1" type="radio" value="palette1" name="palette" class="color-box__input"
@@ -114,7 +114,7 @@
                                     </div>
                                 </label>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </section>
                 <section class="collapsable-box fill">
@@ -161,32 +161,40 @@
                         <input type="url" class="form__input js-github" name="github"
                         id="github" placeholder="Ej: @sally-hill" pattern="@@pattern" required
                         />
-                    </form>
-                </section>
-                <div class="collapsable-box share">
-                    <div class="collapsable-box i-h2-i">
-                        <div class="i-h2-i__ih2"> <i class="fas fa-share-alt collapsable-box__icon"></i>
+                        <div class="collapsable-box share">
+                            <div class="collapsable-box i-h2-i">
+                                <div class="i-h2-i__ih2"> <i class="fas fa-share-alt collapsable-box__icon"></i>
 
-                             <h2 class="collapsable-box__title">Comparte</h2>
+                                     <h2 class="collapsable-box__title">Comparte</h2>
 
-                        </div>
-                        <div class="i-h2-i__iArrow"> <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="i-h2-i__iArrow"> <i class="fas fa-chevron-down"></i>
 
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="button"> <i class="far fa-address-card collapsable-box__icon"></i>
+                                </div>
+                            </div>
+                            <div class="button__box">
+                                <input class="button__input" type="submit" name="submit__button" id="submit__button"
+                                value="Compartir tarjeta">
+                                <button class="button"> <i class="far fa-address-card collapsable-box__icon"></i>
 
-                             <h2 class="button__title">Crear tarjeta</h2>
+                                     <h2 class="button__title">Crear tarjeta</h2>
 
-                        </div>
-                    </div>
-                    <!-- <div class="button-box">
+                                </button>
+                            </div>
+                            <!-- <div class="button">
+    <div class="button">
+      <i class="far fa-address-card collapsable-box__icon"></i>
+      <h2 class="button__title">Crear tarjeta</h2>
+    </div>
+  </div> -->
+                            <!-- <div class="button-box">
       <div class="button-box__button">
         <i class="button-box__far fa-address-card collapsable-box__icon"></i>
         <h2 class="button-box__title">Crear tarjeta</h2>
       </div>
     </div> -->
+                    </form>
+                </section>
             </section>
         </main>
         <footer class="footer">
