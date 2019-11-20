@@ -8,40 +8,8 @@
 .button__box {
   display: flex;
   justify-content: center;
-
-  .button {
-    background: $lightGrey;
-    width: 199px;
-    height: 50px;
-    border-radius: 12px;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: $white;
-    margin: 3rem 0;
-  }
-
-  .button active {
-    background: $mediumOrange;
-  }
-
-  .fa-address-card {
-    color: $white;
-    padding-right: 0.9rem;
-  }
-
-  .button__title {
-    font-size: 1.8rem;
-    font-family: $opensans;
-  }
 }
-/* .button-box {
-  display: flex;
-  justify-content: center;
-
-&__button {
+.button {
   background: $lightGrey;
   width: 199px;
   height: 50px;
@@ -50,20 +18,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   color: $white;
   margin: 3rem 0;
 }
-&__active {
+
+.js-button-active {
   background: $mediumOrange;
 }
 
-&__fa-address-card {
+.fa-address-card {
   color: $white;
   padding-right: 0.9rem;
 }
 
-&__title {
+.button__title {
   font-size: 1.8rem;
   font-family: $opensans;
 }
-} */

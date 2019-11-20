@@ -35,8 +35,6 @@ function changeRole() {
 formInputName.addEventListener("keyup", changeName);
 formInputRole.addEventListener("keyup", changeRole);
 
-// Iconos
-
 // Email
 
 const emailIcon = document.querySelector(".js-card__icon--email");
