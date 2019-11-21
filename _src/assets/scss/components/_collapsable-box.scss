@@ -16,6 +16,7 @@
   }
   &__sub-box {
     text-transform: uppercase;
+    
   }
 }
 
@@ -28,4 +29,8 @@
 .hidden {
   display: none;
 }
-
+/* .js-collapsable-content{
+  display: none;
+} */
+.collapsable--open{
+}

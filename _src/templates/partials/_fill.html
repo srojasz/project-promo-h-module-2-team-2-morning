@@ -10,16 +10,17 @@
       <i class="fas fa-chevron-down"></i>
     </div>
   </div>
-  <form class="form js-collapsable-content" action="" method="">
+  <form class="form" action="" method="">
+    <div class="js-collapsable-content hidden">
+      <partial src="_form-element.html" type="text" classinput="js-name" label="Nombre completo" name="name" id="name" placeholder="Ej: Sally Jill"></partial>
+      <partial src="_form-element.html" type="text" classinput="js-role" label="Puesto" name="role" id="role" placeholder="Ej: Front-end unicorn"></partial>
+      <partial src="_img-form.html"></partial>
+      <partial src="_form-element.html" type="email" classinput="js-email" label="Email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com"></partial>
+      <partial src="_form-element.html" type="tel" classinput="js-phone" label="Teléfono" name="phone" id="phone" placeholder="Ej: 555-55-55-55"></partial>
+      <partial src="_form-element.html" type="text" classinput="js-linkedin" label="Linkedin" name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/sally.hill"></partial>
+      <partial src="_form-element.html" type="text" classinput="js-github" label="Github" name="github" id="github" placeholder="Ej: @sally-hill"></partial>
 
-    <partial src="_form-element.html" type="text" classinput="js-name" label="Nombre completo" name="name" id="name" placeholder="Ej: Sally Jill"></partial>
-    <partial src="_form-element.html" type="text" classinput="js-role" label="Puesto" name="role" id="role" placeholder="Ej: Front-end unicorn"></partial>
-    <partial src="_img-form.html"></partial>
-    <partial src="_form-element.html" type="email" classinput="js-email" label="Email" name="email" id="email" placeholder="Ej: sally-hill@gmail.com"></partial>
-    <partial src="_form-element.html" type="tel" classinput="js-phone" label="Teléfono" name="phone" id="phone" placeholder="Ej: 555-55-55-55"></partial>
-    <partial src="_form-element.html" type="text" classinput="js-linkedin" label="Linkedin" name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/sally.hill"></partial>
-    <partial src="_form-element.html" type="text" classinput="js-github" label="Github" name="github" id="github" placeholder="Ej: @sally-hill"></partial>
-
+    </div>
     <partial src="_share.html"></partial>
 
   </form>
