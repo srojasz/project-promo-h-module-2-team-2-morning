@@ -20,7 +20,7 @@
 }
 
 .card {
-/*   background-image: linear-gradient(to bottom, $silver, $paleGrey); */
+  /*   background-image: linear-gradient(to bottom, $silver, $paleGrey); */
   background-image: url("../images/background.png");
   height: 45.7rem;
 
@@ -128,7 +128,7 @@
 
 .card-container {
   width: 24rem;
-  height: 32.9rem;
+  height: auto;
   background-color: $white;
 
   border-radius: 1.8rem;
