@@ -2,6 +2,13 @@
   font-family: $opensans;
   color: $grey;
   min-width: 32rem;
+  border-bottom: solid 0.2rem $lightGrey;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__icon {
     color: $mediumOrange;
@@ -14,15 +21,10 @@
     display: inline-block;
     text-transform: uppercase;
   }
-  &__sub-box {
-    text-transform: uppercase;
-  }
 }
 
-.i-h2-i {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.collapsable-content {
+  text-transform: uppercase;
 }
 
 .hidden {

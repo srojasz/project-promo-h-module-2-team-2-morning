@@ -1,17 +1,15 @@
 <section class="collapsable-box fill">
-  <div class="collapsable-box i-h2-i">
-    <div class="i-h2-i__ih2">
+  <header class="collapsable-box__header">
+    <div>
       <i class="far fa-keyboard collapsable-box__icon"></i>
-      <h2 class="collapsable-box__title fill">
+      <h2 class="collapsable-box__title">
         Rellena
       </h2>
     </div>
-    <div class="i-h2-i__iArrow">
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </div>
-  <form class="form" action="" method="">
+    <i class="fas fa-chevron-down arrow"></i>
 
+  </header>
+  <section class="collapsable-content">
     <partial src="_form-element.html" type="text" classinput="js-name" label="Nombre completo" name="name" id="name" placeholder="Ej: Sally Jill"></partial>
     <partial src="_form-element.html" type="text" classinput="js-role" label="Puesto" name="role" id="role" placeholder="Ej: Front-end unicorn"></partial>
     <partial src="_img-form.html"></partial>
@@ -20,7 +18,7 @@
     <partial src="_form-element.html" type="text" classinput="js-linkedin" label="Linkedin" name="linkedin" id="linkedin" placeholder="Ej: linkedin.com/sally.hill"></partial>
     <partial src="_form-element.html" type="text" classinput="js-github" label="Github" name="github" id="github" placeholder="Ej: @sally-hill"></partial>
 
-    <partial src="_share.html"></partial>
+  </section>
 
-  </form>
+
 </section>
