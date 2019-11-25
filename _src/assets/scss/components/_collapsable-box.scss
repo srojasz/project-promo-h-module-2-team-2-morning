@@ -23,8 +23,18 @@
   }
 }
 
+.arrow {
+  transition: transform ease 1s;
+}
+.collapsable-box__header {
+  cursor: pointer;
+}
 .collapsable-content {
   text-transform: uppercase;
+}
+.hidden .arrow {
+  transform: translateY(-50%) rotate(-180deg);
+  margin-top: 1.5rem;
 }
 
 .hidden .collapsable-content {
