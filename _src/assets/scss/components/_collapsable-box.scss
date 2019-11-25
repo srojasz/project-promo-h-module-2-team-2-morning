@@ -23,10 +23,11 @@
   }
 }
 
-.collapsable-content {
+
+.collapsable-content {  
   text-transform: uppercase;
 }
 
-.hidden {
+.hidden .collapsable-content{
   display: none;
 }
