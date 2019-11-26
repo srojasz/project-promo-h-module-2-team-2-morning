@@ -1,49 +1,41 @@
-.design {
-  border-bottom: solid 0.2rem $lightGrey;
-  
-  &__title {
-  
-  }
-  &__sub-box {
-  }
-}
 .color-box {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
+
   &__title {
     margin-right: 7rem;
     margin-left: 2.3rem;
     font-size: 1.4rem;
     font-weight: normal;
   }
-  &__form-box {
+  &__palettes {
     margin-top: 0.6rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  &__form {
-
-    margin-bottom: 2rem;
-  }
-  &__label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__input {
-    min-width: 1.7rem;
-    margin-right: 0.5rem;
   }
 }
 .palette {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  &__box {
 
+  &-container {
+    margin-bottom: 2rem;
+
+    &__label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__input {
+      min-width: 1.7rem;
+      margin-right: 0.5rem;
+    }
   }
+
   &__box--darkGreen {
     background-color: $darkGreen;
     width: 3rem;

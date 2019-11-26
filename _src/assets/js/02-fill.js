@@ -4,17 +4,17 @@ console.log("fill");
 // Fill Inputs
 
 const formInputName = document.querySelector(".js-name");
-
 const formInputRole = document.querySelector(".js-role");
-
 const cardName = document.querySelector(".card__name");
 const cardRole = document.querySelector(".card__role");
 
 const defaultName = "Nombre Apellido";
-
 const defaultRole = "Front-end developer";
 
 const isFilled = ""; // No está relleno
+const icons = document.querySelector(".js-card__icon");
+
+
 
 function changeName() {
   if (formInputName.value !== isFilled) {
@@ -51,6 +51,8 @@ function changeEmail() {
   }
 }
 emailInput.addEventListener("keyup", changeEmail);
+emailIcon.addEventListener("click", tryIcons);
+
 
 //Phone
 
@@ -67,6 +69,7 @@ function changePhone() {
   }
 }
 
+phoneIcon.addEventListener("click", tryIcons);
 phoneInput.addEventListener("keyup", changePhone);
 
 // Linkedin
@@ -82,7 +85,9 @@ function changeLinkedin() {
     linkedinIcon.classList.add("js-icon-deactivated");
   }
 }
+
 linkedinInput.addEventListener("keyup", changeLinkedin);
+linkedinIcon.addEventListener("click", tryIcons);
 
 //GitHub
 const githubIcon = document.querySelector(".js-card__icon--github");
@@ -93,8 +98,18 @@ function changeGithub() {
   if (gitHubValue !== isFilled) {
     githubIcon.classList.remove("js-icon-deactivated");
     githubIcon.href = `https://www.github.com/${gitHubValue}`;
+
+
   } else {
     githubIcon.classList.add("js-icon-deactivated");
   }
 }
+
+
+function tryIcons(ev) {
+  ev.preventDefault();
+}
+
+githubIcon.addEventListener("click", tryIcons);
 githubInput.addEventListener("keyup", changeGithub);
+
