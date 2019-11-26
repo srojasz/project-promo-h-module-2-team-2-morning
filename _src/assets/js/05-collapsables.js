@@ -1,5 +1,4 @@
 'use strict';
-
 const triggers = document.querySelectorAll('.js-trigger');
 
 const openCollapsable = function (ev) {
@@ -13,7 +12,6 @@ const openCollapsable = function (ev) {
   } else {
     currentCollapsable.classList.add('hidden');
   }
-
 };
 for (const trigger of triggers) {
   trigger.addEventListener('click', openCollapsable);
