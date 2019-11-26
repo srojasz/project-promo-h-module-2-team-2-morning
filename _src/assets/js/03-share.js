@@ -2,6 +2,10 @@
 
 const form = document.querySelector(".form");
 const shareButton = document.querySelector(".button");
+const emailInput = document.querySelector(".js-email");
+const githubInput = document.querySelector(".js-github");
+const linkedinInput = document.querySelector(".js-linkedin");
+const phoneInput = document.querySelector(".js-phone");
 
 const checkForm = function(ev) {
   if (form.checkValidity() === true) {
