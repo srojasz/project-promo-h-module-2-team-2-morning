@@ -25,6 +25,9 @@ function changeTextItem(inputElement, cardElement, defaultValue) {
 function updateData() {
   changeTextItem(formInputName, cardName, defaultName);
   changeTextItem(formInputRole, cardRole, defaultRole);
+  updateIcons();
+  changeColorToPalette();
+  previewImage();
 }
 
 formInputName.addEventListener("keyup", updateData);
