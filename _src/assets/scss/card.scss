@@ -27,7 +27,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  
+
   @media all and (min-width: 768px) {
     width: 40%;
     height: unset;
@@ -47,7 +47,6 @@
     padding-top: 3rem;
 
     @media all and (min-width: 768px) {
-
       padding-bottom: 15rem;
       padding-top: 12rem;
     }
@@ -173,6 +172,7 @@ i {
   }
   .js-icon-deactivated {
     color: $lightGrey;
+    cursor: default;
   }
 }
 

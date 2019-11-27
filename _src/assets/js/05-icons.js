@@ -27,6 +27,10 @@ const updateIcons = function() {
     const icon = document.querySelector(iconData.cardElementSelector);
     if (input.value === isEmpty) {
       icon.classList.add("js-icon-deactivated");
+      const preventIcons = function(ev) {
+        ev.preventDefault();
+      };
+      icon.addEventListener("click", preventIcons);
     } else {
       icon.classList.remove("js-icon-deactivated");
       icon.href = iconData.prefix + input.value;
