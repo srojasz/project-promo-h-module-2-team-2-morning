@@ -20,6 +20,9 @@ const iconsData = [
     prefix: "https://www.github.com/"
   }
 ];
+const preventIcons = function(ev) {
+  ev.preventDefault();
+};
 
 const updateIcons = function() {
   for (const iconData of iconsData) {
@@ -27,9 +30,6 @@ const updateIcons = function() {
     const icon = document.querySelector(iconData.cardElementSelector);
     if (input.value === isEmpty) {
       icon.classList.add("js-icon-deactivated");
-      const preventIcons = function(ev) {
-        ev.preventDefault();
-      };
       icon.addEventListener("click", preventIcons);
     } else {
       icon.classList.remove("js-icon-deactivated");
