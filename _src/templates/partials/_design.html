@@ -1,21 +1,20 @@
-<section class="collapsable-box design">
-  <div class="i-h2-i">
-    <div class="i-h2-i__ih2">
+<section class="collapsable-box design hidden">
+  <header class="collapsable-box__header js-trigger">
+    <div>
       <i class="far fa-object-ungroup collapsable-box__icon"></i>
-      <h2 class="collapsable-box__title design__title">Diseña
+      <h2 class="collapsable-box__title">
+        Diseña
       </h2>
     </div>
-    <div class="i-h2-i__iArrow">
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </div>
-  <div class="collapsable-box__sub-box color-box">
+    <i class="fas fa-chevron-down arrow"></i>
+  </header>
+  <div class="collapsable-content js-content color-box">
     <h3 class="color-box__title">Colores</h3>
+    <div class="color-box__palettes">
 
-    <div class="color-box__form-box">
-      <div class="color-box__form">
-        <label for="palette1" class="color-box__label">
-          <input id="palette1" type="radio" value="palette1" name="palette" class="color-box__input" />
+      <div class="palette-container">
+        <label for="palette1" class="palette-container__label">
+          <input id="palette1" type="radio" value="palette1" name="palette" class="palette-container__input" />
           <div class="palette">
             <div class="palette__box--darkGreen"></div>
             <div class="palette__box--medGreen"></div>
@@ -23,9 +22,9 @@
           </div>
         </label>
       </div>
-      <div class="color-box__form">
-        <label for="palette2" class="color-box__label">
-          <input id="palette2" type="radio" value="palette2" name="palette" class="color-box__input" />
+      <div class="palette-container">
+        <label for="palette2" class="palette-container__label">
+          <input id="palette2" type="radio" value="palette2" name="palette" class="palette-container__input" />
           <div class="palette">
             <div class="palette__box--darkRed"></div>
             <div class="palette__box--medRed"></div>
@@ -33,9 +32,9 @@
           </div>
         </label>
       </div>
-      <div class="color-box__form">
-        <label for="palette3" class="color-box__label">
-          <input id="palette3" type="radio" value="palette3" name="palette" class="color-box__input" />
+      <div class="palette-container">
+        <label for="palette3" class="palette-container__label">
+          <input id="palette3" type="radio" value="palette3" name="palette" class="palette-container__input" />
           <div class="palette">
             <div class="palette__box--darkGray"></div>
             <div class="palette__box--beige"></div>
