@@ -23,6 +23,7 @@ function changeTextItem(inputElement, cardElement, defaultValue) {
 }
 
 function updateData() {
+  getData();
   changeTextItem(formInputName, cardName, defaultName);
   changeTextItem(formInputRole, cardRole, defaultRole);
   updateIcons();

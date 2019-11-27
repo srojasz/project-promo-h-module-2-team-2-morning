@@ -30,15 +30,22 @@ function startPalette() {
 
 // Opción regulera hasta que creemos una función que sea startPage
 
+
+
+
+
 function reset() {
   startPalette();
   const formInputs = document.querySelectorAll('.js-form__input');
   for (const formInput of formInputs) {
     formInput.value = '';
-  }
+  };
   picture = './assets/images/fotodefault.png';
-  updateData()
+  updateData();
 }
+
+
+
 
 
 const resetButton = document.querySelector(".js-card-reset");

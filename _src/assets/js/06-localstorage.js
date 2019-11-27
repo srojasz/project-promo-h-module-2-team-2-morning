@@ -1,19 +1,37 @@
 'use strict';
 
+
+
 const formInputs = document.querySelectorAll('.js-form__input');
 
 const data = {};
 
-for (const formInput of formInputs) {
-    const key = formInput.name;
-    data[key] = formInput.value;
+
+
+function setData() {
+    for (const formInput of formInputs) {
+        const key = formInput.name;
+        data[key] = formInput.value;
+    }
+    localStorage.setItem('data', JSON.stringify(data));
+
 }
 
-console.log(data)
+form.addEventListener('change', setData);
 
-localStorage.setItem('data', JSON.stringify(data));
 
-// const data = {
-//     name: 'Lolo',
-//     role: 'Front'
-// }
+
+
+function getData() {
+    const data = JSON.parse(localStorage.getItem('data'));
+
+    // if (data.name === "") {
+    //     data.name === 'sara';
+    //     console.log('Estoy vacío');
+
+    // }
+}
+
+getData();
+
+
