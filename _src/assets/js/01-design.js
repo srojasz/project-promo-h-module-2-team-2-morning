@@ -40,7 +40,6 @@ function reset() {
   for (const formInput of formInputs) {
     formInput.value = '';
   };
-  picture = './assets/images/fotodefault.png';
   updateData();
 }
 
