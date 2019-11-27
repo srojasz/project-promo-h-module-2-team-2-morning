@@ -1,37 +1,32 @@
-'use strict';
+"use strict";
 
-
-
-const formInputs = document.querySelectorAll('.js-form__input');
-
-const data = {};
-
-
+const formInputs = document.querySelectorAll(".js-form__input");
 
 function setData() {
-    for (const formInput of formInputs) {
-        const key = formInput.name;
-        data[key] = formInput.value;
-    }
-    localStorage.setItem('data', JSON.stringify(data));
-
+  const data = {};
+  for (const formInput of formInputs) {
+    const key = formInput.name;
+    data[key] = formInput.value;
+  }
+  localStorage.setItem("data", JSON.stringify(data));
 }
 
-form.addEventListener('change', setData);
+form.addEventListener("change", setData);
 
+const getLsData = function() {
+  const data = localStorage.getItem("data");
+  if (!data) {
+    return {};
+  }
+  return JSON.parse(data);
+};
 
+const populateData = function() {
+  const data = getLsData();
+  for (const formInput of formInputs) {
+    const key = formInput.name;
+    formInput.value = data[key] || "";
+  }
+};
 
-
-function getData() {
-    const data = JSON.parse(localStorage.getItem('data'));
-
-    // if (data.name === "") {
-    //     data.name === 'sara';
-    //     console.log('Estoy vacío');
-
-    // }
-}
-
-getData();
-
-
+populateData();
