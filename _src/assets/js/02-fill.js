@@ -23,8 +23,12 @@ function changeTextItem(inputElement, cardElement, defaultValue) {
 }
 
 function updateData() {
+  getData();
   changeTextItem(formInputName, cardName, defaultName);
   changeTextItem(formInputRole, cardRole, defaultRole);
+  updateIcons();
+  changeColorToPalette();
+  previewImage();
 }
 
 formInputName.addEventListener("keyup", updateData);

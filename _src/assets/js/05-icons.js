@@ -24,7 +24,7 @@ const preventIcons = function(ev) {
   ev.preventDefault();
 };
 
-const updateIcons = function() {
+const updateIcons = function () {
   for (const iconData of iconsData) {
     const input = document.querySelector(iconData.inputElementSelector);
     const icon = document.querySelector(iconData.cardElementSelector);
@@ -42,5 +42,5 @@ updateIcons();
 for (const iconData of iconsData) {
   const input = document.querySelector(iconData.inputElementSelector);
 
-  input.addEventListener("keyup", updateIcons);
+  input.addEventListener("keyup", updateData);
 }
