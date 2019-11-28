@@ -17,8 +17,8 @@ const openCollapsable = function (ev) {
 
 for (const trigger of triggers) {
   trigger.addEventListener('click', openCollapsable);
-}
 
+}
 // 'use strict';
 
 // /* const triggers = document.querySelectorAll('.js-trigger');
