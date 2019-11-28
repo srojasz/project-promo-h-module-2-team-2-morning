@@ -8,10 +8,11 @@ const formInputRole = document.querySelector(".js-role");
 const cardName = document.querySelector(".card__name");
 const cardRole = document.querySelector(".card__role");
 
-const data = JSON.parse(localStorage.getItem("data")) || {};
+const data = JSON.parse(localStorage.getItem("data"));
 
-const defaultName = data.name || "Nombre Apellido";
-const defaultRole = data.role || "Front-end developer";
+const defaultName = !data ? "Nombre Apellido" : data.name;
+
+const defaultRole = !data ? "Front-end developer" : data.role;
 
 const isEmpty = ""; // No está relleno
 const icons = document.querySelector(".js-card__icon");

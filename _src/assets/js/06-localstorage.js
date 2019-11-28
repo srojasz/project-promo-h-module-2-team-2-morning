@@ -1,6 +1,19 @@
 "use strict";
 
 const formInputs = document.querySelectorAll(".js-form__input");
+const palettesData = document.querySelectorAll(".palette-container");
+
+// function setPaletteData() {
+//   const checkedPalette = document.querySelector(
+//     ".palette-container__input:checked"
+//   );
+//   const data = {
+//     checked: checkedPalette
+//   };
+//   localStorage.setItem("data", JSON.stringify(data));
+// }
+
+// form.addEventListener("change", setPaletteData);
 
 function setData() {
   const data = {};
@@ -14,19 +27,16 @@ function setData() {
 form.addEventListener("change", setData);
 
 const getLsData = function() {
-  const data = localStorage.getItem("data");
-  if (!data) {
-    return {};
-  }
-  return JSON.parse(data);
-};
-
-const populateData = function() {
-  const data = getLsData();
+  const data = JSON.parse(localStorage.getItem("data"));
   for (const formInput of formInputs) {
     const key = formInput.name;
-    formInput.value = data[key] || "";
+    if (data === null) {
+      formInput.value === "";
+    } else {
+      formInput.value = data[key];
+    }
   }
 };
 
-populateData();
+getLsData();
+updateIcons();
