@@ -7,7 +7,7 @@ const githubInput = document.querySelector(".js-github");
 const linkedinInput = document.querySelector(".js-linkedin");
 const phoneInput = document.querySelector(".js-phone");
 
-const checkForm = function(ev) {
+const checkForm = function (ev) {
   if (form.checkValidity() === true) {
     shareButton.classList.add("js-button-active");
   } else {
@@ -24,9 +24,9 @@ githubInput.addEventListener("keyup", checkForm);
 
 // Crear tarjeta
 
-const shareContainer = document.querySelector(".share__twitter");
+const shareContainer = document.querySelector(".js-share__twitter");
 
-const twitter = function(ev) {
+const twitter = function (ev) {
   ev.preventDefault();
   if (form.checkValidity() === true) {
     shareContainer.classList.remove("hidden");

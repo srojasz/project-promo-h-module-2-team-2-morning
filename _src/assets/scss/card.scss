@@ -51,6 +51,7 @@
       padding-top: 12rem;
     }
   }
+
   &__reset {
     margin-bottom: 2rem;
     border-radius: 1.5rem;
@@ -171,6 +172,7 @@ i {
     color: $darkGreen;
     border: 2px solid $lightGreen;
   }
+
   .js-icon-deactivated {
     color: $lightGrey;
     cursor: default;
@@ -188,6 +190,7 @@ i {
     color: $darkRed;
     border: 2px solid $darkOrange;
   }
+
   .js-icon-deactivated {
     color: $lightGrey;
   }
@@ -208,4 +211,8 @@ i {
   .js-icon-deactivated {
     color: $lightGrey;
   }
+}
+
+.hiddenButton {
+  display: none;
 }
