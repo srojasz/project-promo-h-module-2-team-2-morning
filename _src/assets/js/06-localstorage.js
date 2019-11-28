@@ -1,37 +1,42 @@
-'use strict';
+"use strict";
 
+const formInputs = document.querySelectorAll(".js-form__input");
+const palettesData = document.querySelectorAll(".palette-container");
 
+// function setPaletteData() {
+//   const checkedPalette = document.querySelector(
+//     ".palette-container__input:checked"
+//   );
+//   const data = {
+//     checked: checkedPalette
+//   };
+//   localStorage.setItem("data", JSON.stringify(data));
+// }
 
-const formInputs = document.querySelectorAll('.js-form__input');
-
-const data = {};
-
-
+// form.addEventListener("change", setPaletteData);
 
 function setData() {
-    for (const formInput of formInputs) {
-        const key = formInput.name;
-        data[key] = formInput.value;
+  const data = {};
+  for (const formInput of formInputs) {
+    const key = formInput.name;
+    data[key] = formInput.value;
+  }
+  localStorage.setItem("data", JSON.stringify(data));
+}
+
+form.addEventListener("change", setData);
+
+const getLsData = function() {
+  const data = JSON.parse(localStorage.getItem("data"));
+  for (const formInput of formInputs) {
+    const key = formInput.name;
+    if (data === null) {
+      formInput.value === "";
+    } else {
+      formInput.value = data[key];
     }
-    localStorage.setItem('data', JSON.stringify(data));
+  }
+};
 
-}
-
-form.addEventListener('change', setData);
-
-
-
-
-function getData() {
-    const data = JSON.parse(localStorage.getItem('data'));
-
-    // if (data.name === "") {
-    //     data.name === 'sara';
-    //     console.log('Estoy vacío');
-
-    // }
-}
-
-getData();
-
-
+getLsData();
+updateIcons();
