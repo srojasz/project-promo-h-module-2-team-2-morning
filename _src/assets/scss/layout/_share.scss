@@ -1,5 +1,5 @@
 .share {
-  border-bottom: solid 0.2rem $lightGrey;
+  border-bottom: solid 0.1rem $lightGrey;
 }
 
 .button__input {
@@ -44,6 +44,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-top: solid 0.1rem $lightGrey;
+  padding: 2rem;
 
   &-button {
     border-radius: 3px;
@@ -62,9 +64,12 @@
 
   &-url {
     color: $mediumOrange;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 
   &-message {
+    margin-bottom: 0.5rem;
     font-size: 1.8rem;
     font-weight: 600;
   }
@@ -73,5 +78,8 @@
     text-decoration: none;
     color: white;
   }
+}
 
+.fa-twitter {
+  margin-right: 0.9rem;
 }
