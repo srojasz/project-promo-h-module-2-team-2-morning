@@ -1,3 +1,4 @@
-console.log("Start");
+// Funciones que arrancan al cargar la página
 
-startPalette();
+getLsData();
+updateData();
