@@ -1,5 +1,4 @@
 "use strict";
-console.log("fill");
 
 // Fill Inputs
 

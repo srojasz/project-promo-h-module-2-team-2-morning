@@ -7,6 +7,7 @@ function getDataObj() {
   const currentPaletteValue = document.querySelector(
     ".palette-container__input:checked"
   ).value;
+
   const data = {
     palette: parseInt(currentPaletteValue),
     photo: picture
@@ -29,9 +30,10 @@ form.addEventListener("change", setData);
 const getLsData = function() {
   const data = JSON.parse(localStorage.getItem("data"));
   if (data !== null) {
-    debugger;
     const newPalette = document.querySelector("#palette" + data.palette);
     newPalette.checked = true;
+    data.photo = picture;
+
     for (const formInput of formInputs) {
       const key = formInput.name;
       formInput.value = data[key];

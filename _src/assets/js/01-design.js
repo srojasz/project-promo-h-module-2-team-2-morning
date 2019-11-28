@@ -1,6 +1,5 @@
 "use strict";
 
-console.log("palettes");
 // Paletas
 
 const palette1 = document.querySelector("#palette1");
