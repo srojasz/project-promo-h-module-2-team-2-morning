@@ -2,23 +2,13 @@
 let submitButton = document.querySelector('.button');
 let responseURL = document.querySelector('.js-response');
 let formApi = document.querySelector('.form');
-let frApi = new FileReader();
 
-submitButton.addEventListener('click', loadPhoto);
+submitButton.addEventListener('click', sendData);
 
 function sendData() {
-
     let inputs = Array.from(formApi.elements);
     let json = getJSONFromInputs(inputs);
-    json.skills = ['JavaScript', 'React'];
-    json.photo = fr.result;
     sendRequest(json);
-}
-
-function loadPhoto() {
-    var myFile = document.querySelector('#file').files[0];
-    frApi.addEventListener('load', sendData);
-    frApi.readAsDataURL(myFile);
 }
 
 function getJSONFromInputs(inputs) {
@@ -39,7 +29,7 @@ function sendRequest(json) {
     })
         .then(function (resp) { return resp.json(); })
         .then(function (result) { showURL(result); })
-        .catch(function (error) { console.log(error); });
+        .catch(function (error) { console.log(error); })
 }
 
 function showURL(result) {
