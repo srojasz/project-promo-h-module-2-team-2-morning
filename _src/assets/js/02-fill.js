@@ -10,9 +10,11 @@ const cardRole = document.querySelector(".card__role");
 
 const data = JSON.parse(localStorage.getItem("data"));
 
-const defaultName = !data ? "Nombre Apellido" : data.name;
+const defaultName = "Nombre Apellido";
 
-const defaultRole = !data ? "Front-end developer" : data.role;
+const defaultRole = "Front-end developer";
+
+// const defaultRole = data ? data.role : "Front-end developer";
 
 const isEmpty = ""; // No está relleno
 const icons = document.querySelector(".js-card__icon");
@@ -31,6 +33,7 @@ function updateData() {
   updateIcons();
   changeColorToPalette();
   previewImage();
+  setData();
 }
 
 formInputName.addEventListener("keyup", updateData);

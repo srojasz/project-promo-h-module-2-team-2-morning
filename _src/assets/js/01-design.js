@@ -15,32 +15,15 @@ function changeColorToPalette() {
   cardContainer.classList.remove("palette3");
   const newPalette = document.querySelector(".palette-container__input:checked")
     .value;
-  cardContainer.classList.add(newPalette);
+  cardContainer.classList.add("palette" + newPalette);
 }
 
 palette1.addEventListener("click", changeColorToPalette);
 palette2.addEventListener("click", changeColorToPalette);
 palette3.addEventListener("click", changeColorToPalette);
 
-function startPalette() {
-  const lsPalette = "palette1";
-  const currentPalette = document.querySelector("#" + lsPalette);
+function setDefaultPalette() {
+  const currentPalette = document.querySelector("#palette1");
   currentPalette.checked = true;
   currentPalette.click();
 }
-
-// Opción regulera hasta que creemos una función que sea startPage
-
-function reset() {
-  startPalette();
-  const formInputs = document.querySelectorAll(".js-form__input");
-  for (const formInput of formInputs) {
-    formInput.value = "";
-  }
-  picture = "./assets/images/fotodefault.png";
-  updateData();
-}
-
-const resetButton = document.querySelector(".js-card-reset");
-
-resetButton.addEventListener("click", reset);

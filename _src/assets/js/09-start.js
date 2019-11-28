@@ -1,3 +1,4 @@
 console.log("Start");
 
-startPalette();
+getLsData();
+updateData();
