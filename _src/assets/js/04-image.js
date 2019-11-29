@@ -12,7 +12,7 @@ function getImage(e) {
   fr.readAsDataURL(myFile);
 }
 
-let picture = "";
+let picture = data.photo || "";
 
 function setImage() {
   picture = fr.result;
