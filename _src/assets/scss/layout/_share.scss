@@ -20,7 +20,7 @@
   align-items: center;
 
   color: $white;
-  margin: 3rem 0;
+  margin: 20px auto;
 }
 
 .js-button-active {
@@ -35,4 +35,54 @@
 .button__title {
   font-size: 1.8rem;
   font-family: $opensans;
+}
+
+.share__twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: solid 0.1rem $lightGrey;
+  padding: 2rem;
+
+  &-button {
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: $azure;
+    width: 18.1rem;
+    height: 3rem;
+    background-color: $azure;
+    border-style: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $opensans;
+    text-decoration: none;
+  }
+
+  &-url {
+    color: $mediumOrange;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &-message {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  &-a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.hiddenButton {
+  display: none;
+}
+
+.fa-twitter {
+  margin-right: 10px;
 }
