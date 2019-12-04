@@ -29,7 +29,7 @@ const shareContainer = document.querySelector(".share__twitter");
 const twitter = function(ev) {
   ev.preventDefault();
   if (form.checkValidity() === true) {
-    shareContainer.classList.remove("hidden");
+    shareContainer.classList.remove("hiddenButton");
   }
 };
 
