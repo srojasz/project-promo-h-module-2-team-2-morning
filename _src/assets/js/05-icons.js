@@ -33,6 +33,7 @@ const updateIcons = function() {
       icon.addEventListener("click", preventIcons);
       icon.classList.add("js-icon-deactivated");
     } else {
+      icon.removeEventListener("click", preventIcons);
       icon.classList.remove("js-icon-deactivated");
       icon.href = iconData.prefix + input.value;
       console.log(icon.href);
