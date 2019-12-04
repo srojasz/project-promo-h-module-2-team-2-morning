@@ -24,16 +24,18 @@ const preventIcons = function(ev) {
   ev.preventDefault();
 };
 
-const updateIcons = function () {
+const updateIcons = function() {
   for (const iconData of iconsData) {
     const input = document.querySelector(iconData.inputElementSelector);
     const icon = document.querySelector(iconData.cardElementSelector);
+
     if (input.value === isEmpty) {
-      icon.classList.add("js-icon-deactivated");
       icon.addEventListener("click", preventIcons);
+      icon.classList.add("js-icon-deactivated");
     } else {
       icon.classList.remove("js-icon-deactivated");
       icon.href = iconData.prefix + input.value;
+      console.log(icon.href);
     }
   }
 };

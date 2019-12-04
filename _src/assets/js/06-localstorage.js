@@ -28,7 +28,8 @@ function setData() {
 form.addEventListener("change", setData);
 
 const getLsData = function() {
-  const data = JSON.parse(localStorage.getItem("data"));
+  let data = JSON.parse(localStorage.getItem("data"));
+
   if (data !== null) {
     const newPalette = document.querySelector("#palette" + data.palette);
     newPalette.checked = true;
