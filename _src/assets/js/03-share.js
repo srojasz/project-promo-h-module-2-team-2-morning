@@ -2,12 +2,8 @@
 
 const form = document.querySelector(".form");
 const shareButton = document.querySelector(".button");
-const emailInput = document.querySelector(".js-email");
-const githubInput = document.querySelector(".js-github");
-const linkedinInput = document.querySelector(".js-linkedin");
-const phoneInput = document.querySelector(".js-phone");
 
-const checkForm = function(ev) {
+const checkForm = function() {
   if (form.checkValidity() === true) {
     shareButton.classList.add("js-button-active");
   } else {
@@ -15,12 +11,7 @@ const checkForm = function(ev) {
   }
 };
 
-formInputName.addEventListener("keyup", checkForm);
-formInputRole.addEventListener("keyup", checkForm);
-emailInput.addEventListener("keyup", checkForm);
-phoneInput.addEventListener("keyup", checkForm);
-linkedinInput.addEventListener("keyup", checkForm);
-githubInput.addEventListener("keyup", checkForm);
+form.addEventListener("keyup", checkForm);
 
 // Crear tarjeta
 
