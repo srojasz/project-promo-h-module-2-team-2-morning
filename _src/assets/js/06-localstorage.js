@@ -33,7 +33,7 @@ const getLsData = function() {
   if (data !== null) {
     const newPalette = document.querySelector("#palette" + data.palette);
     newPalette.checked = true;
-    data.photo = picture;
+    picture = data.photo;
 
     for (const formInput of formInputs) {
       const key = formInput.name;

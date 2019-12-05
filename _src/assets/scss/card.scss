@@ -171,10 +171,6 @@ i {
     color: $darkGreen;
     border: 2px solid $lightGreen;
   }
-  .js-icon-deactivated {
-    color: $lightGrey;
-    cursor: default;
-  }
 }
 
 .card-container.palette2 {
@@ -207,5 +203,6 @@ i {
 
   .js-icon-deactivated {
     color: $lightGrey;
+    cursor: default;
   }
 }
