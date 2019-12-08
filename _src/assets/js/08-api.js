@@ -6,7 +6,7 @@ function sendData() {
   var inputs = Array.from(form.elements);
   var json = getJSONFromInputs(inputs);
   json.skills = ["JavaScript", "React"];
-  json.photo = fr.result;
+  json.photo = fr.result || data.photo;
   sendRequest(json);
 }
 
