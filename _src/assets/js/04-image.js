@@ -22,9 +22,12 @@ function setImage() {
 }
 
 function previewImage() {
-  if (picture !== "") {
+  if (picture !== "" && picture !== "./assets/images/fotodefault.png") {
     profileImage.style.backgroundImage = `url(${picture})`;
     profilePreview.style.backgroundImage = `url(${picture})`;
+  } else {
+    profileImage.style.backgroundImage = `url(${picture})`;
+    profilePreview.style.backgroundImage = `url("")`;
   }
 }
 
