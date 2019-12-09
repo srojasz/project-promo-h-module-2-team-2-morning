@@ -7,7 +7,12 @@ function sendData() {
   var json = getJSONFromInputs(inputs);
   json.skills = ["JavaScript", "React"];
 
-  json.photo = fr.result || data.photo;
+  if (fr && fr.result) {
+    json.photo = fr.result;
+  } else if (data && data.photo) {
+    json.photo = data.photo;
+  }
+
   sendRequest(json);
 }
 
