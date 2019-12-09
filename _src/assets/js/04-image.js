@@ -18,6 +18,7 @@ let picture = "";
 function setImage() {
   picture = fr.result;
   previewImage();
+  setData();
 }
 
 function previewImage() {
