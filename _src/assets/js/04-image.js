@@ -10,6 +10,7 @@ function getImage(e) {
   const myFile = e.currentTarget.files[0];
   fr.addEventListener("load", setImage);
   fr.readAsDataURL(myFile);
+  setData();
 }
 
 let picture = "";
