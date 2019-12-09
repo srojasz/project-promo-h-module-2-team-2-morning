@@ -10,12 +10,6 @@ function sendData() {
   sendRequest(json);
 }
 
-// function loadPhoto() {
-//   var myFile = document.querySelector("#img-selector").files[0];
-//   fr.addEventListener("load", sendData);
-//   fr.readAsDataURL(myFile);
-// }
-
 function getJSONFromInputs(inputs) {
   return inputs.reduce(function(acc, val) {
     if (val.nodeName !== "BUTTON") acc[val.name] = val.value;
