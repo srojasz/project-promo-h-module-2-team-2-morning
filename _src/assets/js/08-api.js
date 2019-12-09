@@ -51,9 +51,13 @@ function sendRequest(json) {
 }
 
 function showURL(result) {
+  const twitterBtn = document.querySelector(".js-share__twitter");
+  const twitterText =
+    "Esta es mi tarjeta de visita virtual, ¿me ayudas a compartirla?";
   if (result.success) {
     responseURL.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+    twitterBtn.href = "https://twitter.com/share?text=" + result.cardURL;
   } else {
     responseURL.innerHTML = "ERROR:" + result.error;
   }
