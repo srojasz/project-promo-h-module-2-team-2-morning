@@ -30,13 +30,12 @@ const updateIcons = function() {
     const icon = document.querySelector(iconData.cardElementSelector);
 
     if (input.value === isEmpty) {
-      icon.addEventListener("click", preventIcons);
       icon.classList.add("js-icon-deactivated");
+      icon.addEventListener("click", preventIcons);
     } else {
       icon.removeEventListener("click", preventIcons);
       icon.classList.remove("js-icon-deactivated");
       icon.href = iconData.prefix + input.value;
-      console.log(icon.href);
     }
   }
 };

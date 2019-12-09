@@ -13,8 +13,6 @@ const defaultName = "Nombre Apellido";
 
 const defaultRole = "Front-end developer";
 
-// const defaultRole = data ? data.role : "Front-end developer";
-
 const isEmpty = ""; // No está relleno
 const icons = document.querySelector(".js-card__icon");
 
