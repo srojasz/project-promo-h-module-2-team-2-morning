@@ -6,13 +6,22 @@ function sendData() {
   var inputs = Array.from(form.elements);
   var json = getJSONFromInputs(inputs);
   json.skills = ["JavaScript", "React"];
+
   json.photo = fr.result || data.photo;
   sendRequest(json);
 }
 
 function getJSONFromInputs(inputs) {
   return inputs.reduce(function(acc, val) {
-    if (val.nodeName !== "BUTTON") acc[val.name] = val.value;
+    if (val.nodeName !== "BUTTON") {
+      if (val.name === "palette") {
+        if (val.checked) {
+          acc[val.name] = val.value;
+        }
+      } else {
+        acc[val.name] = val.value;
+      }
+    }
     return acc;
   }, {});
 }
