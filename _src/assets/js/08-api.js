@@ -17,7 +17,7 @@ function sendData() {
 }
 
 function getJSONFromInputs(inputs) {
-  return inputs.reduce(function(acc, val) {
+  return inputs.reduce(function (acc, val) {
     if (val.nodeName !== "BUTTON") {
       if (val.name === "palette") {
         if (val.checked) {
@@ -39,25 +39,24 @@ function sendRequest(json) {
       "content-type": "application/json"
     }
   })
-    .then(function(resp) {
+    .then(function (resp) {
       return resp.json();
     })
-    .then(function(result) {
+    .then(function (result) {
       showURL(result);
     })
-    .catch(function(error) {
+    .catch(function (error) {
       console.log(error);
     });
 }
 
 function showURL(result) {
   const twitterBtn = document.querySelector(".js-share__twitter");
-  const twitterText =
-    "Esta es mi tarjeta de visita virtual, ¿me ayudas a compartirla?";
+  const twitterText = '¡Échale un vistazo a mi tarjeta de visita zero-waste! ¿A qué esperas para hacer la tuya? ';
   if (result.success) {
     responseURL.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
-    twitterBtn.href = "https://twitter.com/share?text=" + result.cardURL;
+    twitterBtn.href = "https://twitter.com/intent/tweet?text=" + twitterText + result.cardURL;
   } else {
     responseURL.innerHTML = "ERROR:" + result.error;
   }
